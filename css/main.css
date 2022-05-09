@@ -135,4 +135,8 @@ button {
   border-radius: 2rem;
   margin: 1rem auto;
   box-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+button:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: white;
 }/*# sourceMappingURL=main.css.map */
