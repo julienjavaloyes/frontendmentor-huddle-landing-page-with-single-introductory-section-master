@@ -1,0 +1,14 @@
+@use "../0-abstracts/colors" as c;
+
+
+button {
+    color:  hsl(257, 40%, 49%,0.8);
+    width: 15rem;
+    left: 5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    margin: 1rem auto;
+    box-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+

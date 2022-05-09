@@ -1,0 +1,53 @@
+
+@use  '../0-abstracts/colors' as c;
+@use "../0-abstracts/media" as m;
+
+
+body {
+    background-color:c.$Violet;
+    text-align: center;
+    background-image: url('../images/bg-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    main {
+
+        .headerlogo{
+            text-align: left;
+            img {
+                height: 2.5rem;
+                margin: 4rem auto;
+            }
+        }
+
+        .contentimg {
+            .content {
+                .title {
+                    margin-top: 4rem;
+                    color: hsl(0deg, 0%, 100%,0.9);
+                }
+                .desc {
+                    padding: 1rem 0;
+                    color: hsl(0deg, 0%, 100%,0.7);
+                }
+            }
+        }
+
+        .footersocial {
+            img {
+                width: 2.5rem;
+                padding: 0.3rem;
+                margin: 3rem 0.5rem;
+                border-radius: 50%;
+                filter: invert(100%);
+                border: solid 1px black;
+            }
+        }
+    }
+}
+
+@include m.for-desktop-up (900px) {    
+    body {
+        background-image: url('../images/bg-desktop.svg');
+    }
+}

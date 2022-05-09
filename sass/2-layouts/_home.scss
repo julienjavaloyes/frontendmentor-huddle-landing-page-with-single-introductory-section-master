@@ -1,0 +1,59 @@
+@use "../0-abstracts/media" as m;
+
+main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .contentimg {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footersocial {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+}
+
+@include m.for-desktop-up (900px) {    
+    main {
+        .contentimg {
+            width: 90vw;
+            flex-direction: row;  
+            text-align: left;
+            
+            img {
+                width:45vw;
+            }  
+            .content {
+                width:550px;
+                margin-left: 1.5rem;
+            }  
+        }
+        .footersocial {
+            align-self: flex-end;
+        }
+    }
+}
+
+@include m.stop-top-overflow (0px,600px) {
+    main {
+        top: 0;
+        left: 50%;
+        transform: translate( -50%,0);
+    }
+}
+@include m.stop-top-overflow (900px,600px) {
+    main {
+        top: 0;
+        left: 50%;
+        transform: translate( -50%,0);
+    }
+}

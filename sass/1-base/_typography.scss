@@ -1,0 +1,23 @@
+@use  '../0-abstracts/colors' as c;
+//example $fontDisplay: 'Big Shoulders Display', cursive;
+$fontDisplay: 'Poppins', sans-serif;
+$fontDisplay2: 'Open Sans', sans-serif;
+
+body {
+    font-family: $fontDisplay;
+    font-weight: 400;
+    font-size: 1rem;
+
+    .title {
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+    .desc {
+        font-size: 1.1rem;
+    }
+    button  {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,138 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+*/
+body {
+  background-color: hsl(257deg, 40%, 49%);
+  text-align: center;
+  background-image: url("../images/bg-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body main .headerlogo {
+  text-align: left;
+}
+body main .headerlogo img {
+  height: 2.5rem;
+  margin: 4rem auto;
+}
+body main .contentimg .content .title {
+  margin-top: 4rem;
+  color: hsla(0deg, 0%, 100%, 0.9);
+}
+body main .contentimg .content .desc {
+  padding: 1rem 0;
+  color: hsla(0deg, 0%, 100%, 0.7);
+}
+body main .footersocial img {
+  width: 2.5rem;
+  padding: 0.3rem;
+  margin: 3rem 0.5rem;
+  border-radius: 50%;
+  filter: invert(100%);
+  border: solid 1px black;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+body .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+body .desc {
+  font-size: 1.1rem;
+}
+body button {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .contentimg {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+main .footersocial {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+@media (min-width: 900px) {
+  main .contentimg {
+    width: 90vw;
+    flex-direction: row;
+    text-align: left;
+  }
+  main .contentimg img {
+    width: 45vw;
+  }
+  main .contentimg .content {
+    width: 550px;
+    margin-left: 1.5rem;
+  }
+  main .footersocial {
+    align-self: flex-end;
+  }
+}
+@media only screen and (min-width: 0px) and (max-height: 600px) {
+  main {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@media only screen and (min-width: 900px) and (max-height: 600px) {
+  main {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+button {
+  color: hsla(257deg, 40%, 49%, 0.8);
+  width: 15rem;
+  left: 5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 1rem auto;
+  box-shadow: 0.1rem 0.1rem 0.5rem black;
+}/*# sourceMappingURL=main.css.map */
